@@ -1,0 +1,218 @@
+{
+  "basics": {
+    "font_size": "16px",
+    "name": "Jarvis Johnson",
+    "label": "Full Stack Engineer",
+    "picture": "images/jarvis-johnson-profile.jpg",
+    "email": "jarviscjohnson@gmail.com",
+    "phone": "(347) 641 7815",
+    "website": "https://builtincode.com",
+    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "location": {
+      "postalCode": "11211",
+      "city": "Brooklyn",
+      "countryCode": "US",
+      "region": "New York"
+    },
+    "socials": [
+      {
+        "network": "github",
+        "username": "jarvisjohnson",
+        "url": "https://github.com/jarvisjohnson"
+      },
+      {
+        "network": "linkedin",
+        "username": "jarvis-johnson",
+        "url": "https://www.linkedin.com/in/jarvis-johnson-65813453/"
+      },
+      {
+        "network": "facebook",
+        "username": "jarviscjohnson",
+        "url": "https://www.facebook.com/jarviscjohnson"
+      },
+      {
+        "network": "business",
+        "username": "Built in Code",
+        "url": "https://www.builtincode.com"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Built in Code",
+      "position": "Full stack developer / founder",
+      "website": "https://www.builtincode.com",
+      "startDate": "2015",
+      "endDate": "2017",
+      "summary": "Built in Code build web apps for design agencies and clients worldwide.",
+      "highlights": [
+        "Built a large scale peer-to-peer marketplace allowing rental and sale of high fashion items - Closet Raid",
+        "Client web hosting management app created in Rails, with recurring subscriptions and support requests",
+        "Optimized an algorithm that holds the current world record for Weisman Scores"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "CoderDojo",
+      "position": "Teacher",
+      "website": "http://coderdojo.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Global movement of free coding clubs for young people.",
+      "highlights": [
+        "Awarded 'Teacher of the Month'"
+      ]
+    }
+  ],
+  "formalEducation": [
+    {
+      "institution": "University of Melbourne",
+      "area": "Commerce",
+      "studyType": "Bachelor",
+      "startDate": "2007-03-01",
+      "endDate": "2009-11-29",
+      "gpa": "",
+      "majors": [
+        "Finance",
+        "Marketing"
+      ]
+    },
+    {
+      "institution": "General Assembly",
+      "area": "Front End Web Development",
+      "studyType": "10 weeks part time",
+      "startDate": "2014-06-01",
+      "endDate": "2014-09-09",
+      "gpa": "",
+      "majors": [
+        "",
+        ""
+      ]
+    }    
+  ],
+  "continuingEducation": [
+    {
+      "institution": "Treehouse",
+      "area": "Full Stack WordPress",
+      "studyType": "Online",
+      "startDate": "2014-10-01",
+      "endDate": "2014-12-15",
+      "gpa": "",
+      "majors": [
+        "Finance",
+        "Marketing"
+      ]
+    }
+  ],  
+  "awards": [
+    {
+      "title": "Digital Compression Pioneer Award",
+      "date": "2014-11-01",
+      "awarder": "Techcrunch",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Video compression for 3d media",
+      "publisher": "Hooli",
+      "releaseDate": "2014-10-01",
+      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+    }
+  ],
+  "talents": [
+    {
+      "category": "Front End",
+      "keywords": [
+        "React",
+        "Sass",
+        "Semantic UI"
+      ]
+    },
+    {
+      "category": "Back End",
+      "keywords": [
+        "Ruby",
+        "Rails"
+      ]
+    },
+    {
+      "category": "Server",
+      "keywords": [
+        "Linux Command Line",
+        "Heroku / Digital Ocean",
+        "S3 / Cloudfront"
+      ]
+    }    
+  ],
+  "projects": [
+    {
+      "category": "For Clients",
+      "sites": [
+        {
+          "title": "Closet Raid",
+          "link": "https://www.closetraid.com.au",
+          "stack": ["rails", "mysql", "heroku"]
+        },
+        {
+          "title": "SAENA",
+          "link": "https://www.saena.com.au",
+          "stack": ["rails", "mysql", "heroku"]
+        },
+        {
+          "title": "Closet Raid",
+          "link": "https://www.closetraid.com.au",
+          "stack": ["rails", "mysql", "heroku"]
+        }        
+      ]
+    },
+    {
+      "category": "Personal",
+      "sites": [
+        {
+          "title": "Closet Raid",
+          "link": "https://www.closetraid.com.au",
+          "stack": ["rails", "mysql", "heroku"]
+        },
+        {
+          "title": "Built in Code",
+          "link": "https://www.builtincode",
+          "stack": ["rails", "mysql", "wordpress"]
+        }    
+      ]
+    },
+    {
+      "category": "Open Source",
+      "sites": [
+        {
+          "title": "Sharetribe Stripe Connect",
+          "link": "https://github.com/jarvisjohnson/sharetribe-stripe-connect",
+          "stack": ["rails", "Stripe API", "Sphinx"]
+        }
+      ]
+    }    
+  ],  
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Erlich Bachman",
+      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+    }
+  ]
+}

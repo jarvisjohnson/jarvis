@@ -1,0 +1,17 @@
+.contact {
+	margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.profile{
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.profile_image{
+  border-radius: 50%;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  margin: 20px;
+}

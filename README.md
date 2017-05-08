@@ -32,4 +32,10 @@
 
 * Deployment instructions
 
+  - Mina is used for deployments
+
+  - run `gem install mina`
+
+  - files must be committed to git before running `mina deploy`
+
 * ...

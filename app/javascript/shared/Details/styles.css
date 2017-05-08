@@ -1,0 +1,9 @@
+.section{
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.break {
+  border-bottom: 1px solid #666;
+}
