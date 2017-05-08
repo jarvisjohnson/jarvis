@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import * as styles from './styles.css'
-import Counter from 'shared/counter'
+import Counter from 'shared/Counter'
 
 export default class Modifier extends Component {
   render() {
