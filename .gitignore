@@ -23,3 +23,9 @@
 .byebug_history
 /public/packs
 /node_modules
+
+# Ignore encrypted secrets key file.
+config/secrets.yml.key
+
+# Ignore application configuration
+/config/application.yml
