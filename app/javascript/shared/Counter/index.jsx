@@ -8,28 +8,32 @@ export default class Counter extends Component {
     super(props);
     this.state = {
       count: 16,
-      increment: 1
+      increment: 1,
+      max: 24,
+      min: 12
     }
   }
 
   increment() {
     let count = this.state.count;
     let increment = this.state.increment;
+    let max = this.state.max;
     let newCount = count += increment;
-    this.setState({ count: newCount });
-    document.body.style.fontSize = newCount + 'px';
-    console.log(newCount);
-    console.log(document.body.style.fontSize);  
+    if (newCount <= max){
+      this.setState({ count: newCount });
+      document.body.style.fontSize = newCount + 'px';
+    }
   }
 
   decrement() {
     let count = this.state.count;
     let increment = this.state.increment;
+    let min = this.state.min;
     let newCount = count -= increment;
-    this.setState({ count: newCount });
-    document.body.style.fontSize = newCount + 'px';
-    console.log(newCount);
-    console.log(document.body.style.fontSize);  
+    if (newCount >= min){
+      this.setState({ count: newCount });
+      document.body.style.fontSize = newCount + 'px';
+    }
   }
 
   updateIncrement(e) {

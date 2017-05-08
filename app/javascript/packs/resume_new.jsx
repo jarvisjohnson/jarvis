@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import { render } from 'react-dom'
-import Resume from './resume.jsx'
+import Resume from '../Resume'
 import * as styles from './resume_new.css'
 import Details from '../shared/Details'
 import Modifier from '../shared/Modifier'
@@ -18,6 +18,7 @@ export default class Container extends Component {
             <Details />
           </div>
           <div className={styles.right__column}>
+            <Resume />
           </div>
           <span className={styles.clearfix}></span>
 

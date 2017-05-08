@@ -47,7 +47,7 @@ const Job = ({
 const mapTo = SomeComponent => (props, i) => 
 	<SomeComponent key={i} {...props} />
 
-const Resume = ({formalEducation, continuingEducation, work, volunteer, skills}) =>
+const ResumeBody = ({formalEducation, continuingEducation, work, volunteer, skills}) =>
 	<div className={styles.container} >
 
 		<div className={styles.section} >
@@ -60,17 +60,6 @@ const Resume = ({formalEducation, continuingEducation, work, volunteer, skills})
 			{continuingEducation.map(mapTo(School))}
 		</div>		
 
-		<div className={styles.section} >
-			<h2 className={styles.break}>Volunteer Experience</h2>
-			{volunteer.map(({organization: company, ...props}, i) => 
-				<Job 
-					key={i} 
-					{...props} 
-					company={company}
-				/>
-			)}
-		</div>
-
 		<div >
 			<h2 className={styles.break}>Professional Experience</h2>
 			{work.map(mapTo(Job))}
@@ -79,8 +68,8 @@ const Resume = ({formalEducation, continuingEducation, work, volunteer, skills})
 
 	</div>
 
-export default class Container extends Component {
+export default class Resume extends Component {
   render() {
-    return <Resume {...resume} />
+    return <ResumeBody {...resume} />
   }
 }
