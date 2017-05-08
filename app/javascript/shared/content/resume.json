@@ -46,24 +46,100 @@
       "endDate": "2017",
       "summary": "Built in Code build web apps for design agencies and clients worldwide.",
       "highlights": [
-        "Built a large scale peer-to-peer marketplace allowing rental and sale of high fashion items - Closet Raid",
-        "Client web hosting management app created in Rails, with recurring subscriptions and support requests",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        {
+          "lead": "I build web apps for clients, primarily in Ruby on Rails, while running my own business",
+          "points": [
+
+           ]
+
+        },
+        {
+          "lead": "A recent highlight is building a large scale peer-to-peer marketplace - Closet Raid: closetraid.com.au",
+          "points": [
+            "Closet Raid enables Rental and Purchase of fashion items in a peer-to-peer marketplace",
+            "The project was built by myself from 2016 - 17, with major features including:",
+            "Stripe Connect integration for payments (peer-to-peer, application fee)",
+            "availability management for rental products (with Sphinx search)",
+            "fully custom front end, with React for many components",
+            "stack: Ruby, mySQL, webpack, Node.js; hosting: Heroku, (assets S3 + Cloudfront)"
+          ]
+        },
+        {
+          "lead": "Another recent project in Rails is for a Veterinarian Naturopath’s Association:  saena.com.au",
+          "points": [
+            "I built two types of search for practitioners: geofencing and multiple parameter search",
+            "member’s forum allowing messaging, posts, and events (credit Thredded gem)",
+            "created an ajax multi-step onboarding form for practitioners including document uploads",
+            "user friendly admin section & member profiles, ability to edit nested resources",
+            "use of AJAX requests during (Devise) user actions",
+            "membership subscription payments taken with the Stripe Ruby API and webhooks",
+            "custom configured Ubuntu 16.04 with Unicorn and nginx server (Digital Ocean)",
+            "deployments are handled with Mina"
+          ]
+        },
+        {
+          "lead": "Client web hosting management app created in Rails, with recurring subscriptions and support requests",
+          "points": [
+            "This is a fully custom Rails app",
+            "I built two types of search for practitioners: geofencing and multiple parameter search",
+            "member’s forum (credit Thredded gem)"            
+          ]
+        }, 
+        {
+          "lead": "Open source: Sharetribe Stripe Connect (github.com/jarvisjohnson/sharetribe-stripe-connect)",
+          "points": [
+            "Sharetribe open-source is a large-scale Rails with React app for marketplaces",
+            "It is missing payments; I built a Stripe Connect JSON API integration and open-sourced it",
+            "I actively maintain the repo and participate in the Sharetribe Community Forum",
+            "I also interact with many repos on Github, and actively participate on Stack Overflow and CodeWars"            
+          ]
+        }, 
+        {              
+        "lead": "Other platforms I have built in include WordPress and Shopify (itself a Rails app)",
+        "points": []
+        }
       ]
-    }
-  ],
-  "volunteer": [
+    },
     {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
+      "company": "Bone Digital",
+      "position": "Junior Developer",
+      "website": "http://bone.digital/",
+      "startDate": "2015",
+      "endDate": "2016",
+      "summary": "Bone Digital are WordPress developers and designers",
       "highlights": [
-        "Awarded 'Teacher of the Month'"
+        {              
+        "lead": "Main work consisted of building custom WordPress themes, both front and back end",
+        "points": []
+        },
+        {              
+        "lead": "Built thedesignkids.org; worked on many WordPress custom themes",
+        "points": []
+        },
+        {              
+        "lead": "Stack / Tools: Linux, Apache, PHP, mySQL, SASS, jQuery",
+        "points": []
+        }
       ]
-    }
+    },
+    {
+      "company": "MediaCom",
+      "position": "Digital Advertising Planner / Buyer",
+      "website": "http://www.mediacom.com/",
+      "startDate": "2013",
+      "endDate": "2015",
+      "summary": "Bone Digital are WordPress developers and desingers",
+      "highlights": [
+        {              
+        "lead": "Digital Media Planning and Buying for large Australian clients for world-leading ad agency.",
+        "points": []
+        },
+        {              
+        "lead": "Largely client facing role - Ad tracking sparked my interest in more technical / developer work",
+        "points": []
+        }     
+      ]
+    }     
   ],
   "formalEducation": [
     {
@@ -85,10 +161,7 @@
       "startDate": "2014-06-01",
       "endDate": "2014-09-09",
       "gpa": "",
-      "majors": [
-        "",
-        ""
-      ]
+      "majors": []
     }    
   ],
   "continuingEducation": [
@@ -99,11 +172,35 @@
       "startDate": "2014-10-01",
       "endDate": "2014-12-15",
       "gpa": "",
-      "majors": [
-        "Finance",
-        "Marketing"
-      ]
-    }
+      "majors": []
+    },
+    {
+      "institution": "The Rails Tutorial",
+      "area": "Complete book A-Z",
+      "studyType": "Online",
+      "startDate": "2015-10-01",
+      "endDate": "2015-12-15",
+      "gpa": "",
+      "majors": []
+    },
+    {
+      "institution": "The Well Grounded Rubyist",
+      "area": "Computer Programming",
+      "studyType": "Book",
+      "startDate": "2016-10-01",
+      "endDate": "2017-12-15",
+      "gpa": "",
+      "majors": []
+    },
+    {
+      "institution": "Udacity",
+      "area": "Machine Learning",
+      "studyType": "Online",
+      "startDate": "2016-10-01",
+      "endDate": "2017-12-15",
+      "gpa": "",
+      "majors": []
+    }  
   ],  
   "awards": [
     {
@@ -128,14 +225,17 @@
       "keywords": [
         "React",
         "Sass",
-        "Semantic UI"
+        "Webpack",
+        "Grunt / NPM / Yarn"
       ]
     },
     {
       "category": "Back End",
       "keywords": [
         "Ruby",
-        "Rails"
+        "Rails",
+        "git",
+        "RSpec"
       ]
     },
     {
@@ -143,7 +243,8 @@
       "keywords": [
         "Linux Command Line",
         "Heroku / Digital Ocean",
-        "S3 / Cloudfront"
+        "S3 / Cloudfront",
+        "Vagrant / Docker"
       ]
     }    
   ],
@@ -154,7 +255,7 @@
         {
           "title": "Closet Raid",
           "link": "https://www.closetraid.com.au",
-          "stack": ["rails", "mysql", "heroku"]
+          "stack": ["rails", "mysql", "heroku", "shpinx"]
         },
         {
           "title": "SAENA",
@@ -172,15 +273,15 @@
       "category": "Personal",
       "sites": [
         {
-          "title": "Closet Raid",
-          "link": "https://www.closetraid.com.au",
-          "stack": ["rails", "mysql", "heroku"]
+          "title": "Built in Code",
+          "link": "https://www.builtincode.com",
+          "stack": ["rails", "mysql", "wordpress"]
         },
         {
-          "title": "Built in Code",
-          "link": "https://www.builtincode",
-          "stack": ["rails", "mysql", "wordpress"]
-        }    
+          "title": "This Resume",
+          "link": "https://www.jarvisjohnson.net",
+          "stack": ["100% React", "Webpack", "Rails JSON API"]
+        }   
       ]
     },
     {
@@ -211,8 +312,14 @@
   ],
   "references": [
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
+      "name": "Adam Russell",
+      "position": "Manager @ MediaCom",
+      "reference": "Jarvis was a valued member of my team at MediaCom in Melbourne, where we plan and buy advertising campaigns for some of Australia’s largest companies. Jarvis particularly excelled at mathematical and statistical analysis tasks, including programmatic online ad buying and consumer impact reporting on ad campaigns. He made it known that he desired a more technical role, and this led him to complete a software course outside of work hours, which we supported. Above all, we miss his humour and Jarvis is often talked about in the office; I’m sure he would have the same impact at any company. I'd take him back any day!."
+    },
+    {
+      "name": "James Burke",
+      "position": "Manager @ Bone Digital",
+      "reference": "Jarvis worked for my development and design agency for close to a year.  He was early in his development career and was clearly eager to learn as much from us as possible.  He learned the basics of WordPress front and back end development very quickly, allowing him to become an immediate asset to us.Jarvis even helped us improve our own workflows, introducing us to technologies such as SASS and Grunt.  His previous career experience was evident as he knew how to handle our stakeholders. Our trust in each other as developers has since found us sharing leads between our business and Swish, Jarvis’s own development business.  Whatever development and web engineering roles Jarvis is looking into I’m certain he’ll be a great asset and push the product forward, as he did with us."
+    }    
   ]
 }

@@ -1,88 +1,37 @@
 import React, { Component } from 'react'
 
-import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
-import * as styles from './resume_new.css'
-import resume from '../shared/content/resume.json'
-import { abbreviations as monthAbbrs } from 'shared/months'
+import { render } from 'react-dom'
+import Resume from '../Resume'
+import * as styles from './resume.css'
+import Details from '../shared/Details'
+import Modifier from '../shared/Modifier'
 
-const formatDateRange = ({startDate, endDate}) => {
-	var start = new Date(startDate)
-	var end = new Date(endDate)
+// const modifierWrap = () =>
 
-	var formatDate = date => `${monthAbbrs[date.getUTCMonth()]} ${date.getUTCFullYear()}`
-	return `${formatDate(start)} - ${formatDate(end)}`
+
+export default class Container extends Component {
+  render() {
+    return (
+      <div>
+        <div className={styles.app}>
+          <div className={styles.left__column}>
+            <Details />
+          </div>
+          <div className={styles.right__column}>
+            <Resume />
+          </div>
+          <span className={styles.clearfix}></span>
+
+        </div>
+        <div className={styles.modifier__wrap}>
+          <Modifier/>        
+        </div>
+      </div>
+    )
+  }
 }
 
-const makeList = (m, i) => <li key={i}>{m}</li>
-
-const majorList = (m, i) => <span key={i}>{m} </span>
-
-const School = ({institution, area, studyType, startDate, endDate, gpa, majors}) =>
-	<div className={styles.sectionItem}>
-		<p className={styles.date}>{formatDateRange({startDate, endDate})}</p>
-		<div className={styles.sectionContent}>
-			<h3>{institution}</h3>
-			<div>{area}, {studyType}, Majors: {majors.map(majorList)}</div>
-		</div>
-	</div>
-
-const Job = ({
-	company, 
-	position, 
-	website, 
-	startDate, 
-	endDate, 
-	summary, 
-	highlights
-}) =>
-	<div className={styles.sectionItem}>
-		<p className={styles.date}>{formatDateRange({startDate, endDate})}</p>
-		<div className={styles.sectionContent}>
-			<h3>{position} <span className={styles.headerDetail}>{company}</span></h3>
-			<ul className={styles.jobList}>
-				{highlights.map(makeList)}
-			</ul>
-		</div>
-	</div>
-
-const mapTo = SomeComponent => (props, i) => 
-	<SomeComponent key={i} {...props} />
-
-const Resume = ({formalEducation, continuingEducation, work, volunteer, skills}) =>
-	<div className={styles.container} >
-
-		<div className={styles.section} >
-			<h2 className={styles.break}>Formal Education</h2>
-			{formalEducation.map(mapTo(School))}
-		</div>
-
-		<div className={styles.section} >
-			<h2 className={styles.break}>Ongoing Education</h2>
-			{continuingEducation.map(mapTo(School))}
-		</div>		
-
-		<div >
-			<h2 className={styles.break}>Professional Experience</h2>
-			{work.map(mapTo(Job))}
-		</div>
-
-
-	</div>
-
-
-
-const Hello = props => (
-  <div>
-  	Hello {props.name}!
-  	{resume.basics.font_size}
-  </div>
-)
-
-Hello.defaultProps = {
-  name: 'David'
-}
-
-Hello.propTypes = {
-  name: PropTypes.string
-}
+render(
+    <Container />
+  , document.body.appendChild(document.createElement('div'))
+  )

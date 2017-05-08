@@ -14,6 +14,12 @@ const formatDateRange = ({startDate, endDate}) => {
 
 const makeList = (m, i) => <li key={i}>{m}</li>
 
+const nestedList = (m, i) => 
+	<li key={i}>{m}
+		<ul>
+		</ul>
+	</li>
+
 const majorList = (m, i) => <span key={i}>{m} </span>
 
 const School = ({institution, area, studyType, startDate, endDate, gpa, majors}) =>
@@ -21,7 +27,14 @@ const School = ({institution, area, studyType, startDate, endDate, gpa, majors})
 		<p className={styles.date}>{formatDateRange({startDate, endDate})}</p>
 		<div className={styles.sectionContent}>
 			<h3>{institution}</h3>
-			<div>{area}, {studyType}, Majors: {majors.map(majorList)}</div>
+			<div>
+      {majors.length > 0 ? (
+        <div>{area}, {studyType}, Majors: {majors.map(majorList)}</div>
+      ) : (
+        <div>{area}, {studyType}</div>
+      )}
+			</div>
+
 		</div>
 	</div>
 
@@ -39,7 +52,16 @@ const Job = ({
 		<div className={styles.sectionContent}>
 			<h3>{position} <span className={styles.headerDetail}>{company}</span></h3>
 			<ul className={styles.jobList}>
-				{highlights.map(makeList)}
+				{highlights.map(function(highlight, key){
+					return(
+						<li key={key}>
+							{highlight.lead}
+							<ul className={styles.jobList__second}>
+								{highlight.points.map(makeList)}
+							</ul>
+						</li>
+					)
+				})}
 			</ul>
 		</div>
 	</div>

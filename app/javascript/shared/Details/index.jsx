@@ -14,7 +14,7 @@ export default class Container extends Component {
       <div>
         <Profile />
         <div className={styles.section}>
-          <h2 className={styles.break}>Skills</h2>
+          <h2 className={styles.break}>Primary Skills</h2>
           <Skills />
         </div>
         <div className={styles.section}>

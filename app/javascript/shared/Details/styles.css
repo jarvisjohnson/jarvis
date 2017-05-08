@@ -1,7 +1,10 @@
 .section{
-  background: white;
   padding: 20px;
   margin-bottom: 25px;
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  box-shadow: 0 2px 1px 0 #E4E4E4;
+  border-radius: 2px;  
 }
 
 .break {

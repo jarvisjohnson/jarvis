@@ -83,10 +83,13 @@ h5 {
 	float: left;
 }
 .right__column{
-	width: calc(73% - 40px);
+	width: calc(73% - 42px);
 	float: left;
-	background: white;
 	padding: 20px;
+	background: #FFFFFF;
+	border: 1px solid #EFEFEF;
+	box-shadow: 0 2px 1px 0 #E4E4E4;
+	border-radius: 2px;	
 }
 .clearfix:after {
 	content: " "; /* Older browser do not support empty content */

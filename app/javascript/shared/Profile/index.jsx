@@ -32,9 +32,11 @@ const getLocationString = ({city, region, postalCode}) =>
 
 const Profile = ({name, label, email, phone, website, summary, location, picture, socials}) =>
 	<div className={styles.profile}>
-		<img src={myImage} className={styles.profile_image}/>
-		<h1>{name}</h1>
-		<h3>{label}</h3>
+		<div className={styles.profile__upper}>
+			<img src={myImage} className={styles.profile_image}/>
+			<h1>{name}</h1>
+			<h3>{label}</h3>
+		</div>
 		<ul className={styles.contact}>
 			<li>
 				{email}
